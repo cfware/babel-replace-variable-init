@@ -1,7 +1,9 @@
 const t = require('libtap');
-
 const {transformSync} = require('@babel/core');
-const babelReplaceVariableInit = require('babel-replace-variable-init');
+
+const babelReplaceVariableInit = require(
+	process.versions.node.split('.')[0] >= 14 ? 'babel-replace-variable-init' : './index.cjs'
+);
 
 t.type(babelReplaceVariableInit, 'function');
 
