@@ -1,6 +1,6 @@
 {
 	"name": "babel-replace-variable-init",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Generate a babel plugin which replaces variable initializations",
 	"main": "index.cjs",
 	"exports": "./index.cjs",
